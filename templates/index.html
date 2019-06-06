@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1{
+            margin-left: 400px;
+        }
+      
+        .box{
+            height:100px;
+            width: 100px;
+            background-color:blue;
+            margin: 10px;
+            display:inline-block;
+        }
+        .color{
+            background-color:{{color}};
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="container">
+        {% for i in range(0,times): %}
+            <div class="box color"></div>
+        {% endfor%}
+    </div>
+</body>
+</html>
